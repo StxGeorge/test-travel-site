@@ -581,6 +581,19 @@ a {
     max-width: 976px;
   }
 
+.wrapper--no-padding-until-medium {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+@media (min-width: 800px) {
+
+.wrapper--no-padding-until-medium {
+      padding-right: 18px;
+      padding-left: 18px
+  }
+  }
+
 .wrapper .wrapper {
     padding-right: 0;
     padding-left: 0;
@@ -604,7 +617,7 @@ a {
 @media (min-width: 800px) {
 
 .page-section {
-  padding: 4.5rem 0
+    padding: 4.5rem 0
 }
   }
 
@@ -614,11 +627,19 @@ a {
   }
 
 .page-section--testimonials {
-    background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+
+    background-color: #e0e6ef;
+  }
+
+@media (min-width: 800px) {
+
+.page-section--testimonials {
+      background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+      -webkit-background-size: cover;
+         -moz-background-size: cover;
+           -o-background-size: cover;
+              background-size: cover
+  }
   }
 
 .headline {
@@ -681,8 +702,16 @@ a {
     display: table;
   }
 
+.row--t-padding {
+  padding-top: 80px;
+}
+
 .row--gutters {
   margin-right: -65px;
+}
+
+.row--gutters-small {
+  margin-right: -45px;
 }
 
 .row--gutters-large {
@@ -691,6 +720,10 @@ a {
 
 .row--gutters > div {
   padding-right: 65px;
+}
+
+.row--gutters-small > div {
+  padding-right: 45px;
 }
 
 .row--gutters-large > div {
@@ -729,6 +762,28 @@ a {
   .row__medium-8--smaller {
     width: 63%;
   }
+  }
+
+/* begin equal height rules*/
+
+@media (min-width: 800px) {
+
+.row--equal-height-at-medium {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex
+}
+  }
+
+.row--equal-height-at-medium > div { /* this selects every children divs within the containing class*/
+    float: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
 .generic-content-container p {
