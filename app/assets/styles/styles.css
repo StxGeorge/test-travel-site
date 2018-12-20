@@ -3,6 +3,7 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
+@import "modules/_reveal-item";
 @import "modules/_large-hero";
 @import "modules/_btn";
 @import "modules/_wrapper";
@@ -16,4 +17,4 @@
 @import "modules/_sprite";
 @import "modules/_site-footer";
 @import "modules/_site-header";
-@import "modules/_primary-nav"
+@import "modules/_primary-nav";

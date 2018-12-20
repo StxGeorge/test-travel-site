@@ -474,6 +474,28 @@ a {
   color: #d59541;
 }
 
+.reveal-item {
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-out;
+  -o-transition: all 1.5s ease-out;
+  -moz-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transform: scale(1.15);
+     -moz-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+       -o-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+    opacity: 1;
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+
 .large-hero {
   border-bottom: 10px solid #2f5572;
   position: relative;
